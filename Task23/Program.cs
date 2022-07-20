@@ -10,9 +10,6 @@ int i = 1;
 Console.Write($"{n} -> ");
     while (i <= n)
     {
-        int a = i*i*i;
-        {
-            Console.Write($"|{a}|");
-        }
+        Console.Write($"|{i*i*i}|");
         i++;
     }
