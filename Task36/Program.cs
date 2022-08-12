@@ -16,11 +16,12 @@ int[] CreateArrayRndInd (int size, int min, int max)
 int GetCountEvenNum (int [] array)
 {
     int sum = 0;
-    for (int i = 0; i < array.Length; i++)
+    for (int i = 1; i < array.Length; i++)
     {
-        if (array[i]%2!=0)
+        if (i%2!=0)
+        {
         sum+=array[i];
-        
+        } 
     }
     return sum;
 }
@@ -35,7 +36,7 @@ void PrintArray (int[] array)
     }
 }
 Console.Clear();
-int[] array = CreateArrayRndInd (8, 1, 10);
+int[] array = CreateArrayRndInd (10, 1, 10);
 PrintArray (array);
 int sum = GetCountEvenNum (array);
 Console.Write($"-> {sum}");
