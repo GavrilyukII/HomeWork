@@ -1,6 +1,7 @@
 ﻿// 1. Задайте массив из 12 элементов, заполненный случайными числами из промежутка [-9,9].
 // 2. Найдите сумму отрицательных и положительных элементов массива.
 // 3. Вывод результата
+// 4. Метод реверсии
 
 int[] CreateArrayRndInd (int size, int min, int max)
 {
@@ -47,3 +48,19 @@ int[] sumPosNegElem = GetSumPosNegElem(array);
 Console.WriteLine();
 Console.WriteLine($"Сумма положительных чисел = {sumPosNegElem[1]}");
 Console.WriteLine($"Сумма отрицательных чисел = {sumPosNegElem[0]}");
+
+void Reverse (int array [])
+{
+    int size = array.Legth;
+    int index1 = 0;
+    int index2 = size-1;
+    while (index1 < index2)
+    {
+        int obj = array[index1];
+        array[index1] = array[index2];
+        array[index2] = obj;
+
+        index1++;
+        index2--;
+    }
+}
