@@ -92,3 +92,6 @@ void PrintMatrix(int[,] array)
         Console.WriteLine();
     }
 }
+
+int[,] matrixResault = GetMatrix(3, 4);
+PrintMatrix (matrixResault);
