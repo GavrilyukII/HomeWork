@@ -53,7 +53,7 @@ void PrintArray (double[] array)
 }
 
 Console.Clear();
-double[] array = CreateArrayRndInd (8, 1, 10);
+double[] array = CreateArrayRndInd (15, 1, 99);
 PrintArray (array);
 double[] MinMax = GetMaxMinNum (array);
 double diff = Math.Round (GetDiffMaxMin (MinMax[0], MinMax[1]),2);
