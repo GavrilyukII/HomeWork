@@ -51,7 +51,7 @@ Console.WriteLine($"Сумма отрицательных чисел = {sumPosNe
 
 void Reverse (int[] array)
 {
-    int size = array.Legth;
+    int size = array.Length;
     int index1 = 0;
     int index2 = size-1;
     while (index1 < index2)
