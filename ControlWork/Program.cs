@@ -27,6 +27,16 @@ string[] CreateStringLess(string[] array, int count)
     return result;
 }
 
+void PrintArray(string[] array)
+{
+   for (int i = 0; i < array.Length; i++)
+    {
+       if(i == 0) Console.Write("[");
+       if(i < array.Length - 1) Console.Write("\"" + array[i] + "\",");
+       else Console.Write("\"" + array[i] + "\"]");
+   }
+} 
+
 string[] array1 = {"hello", "3", "world", ")6GG", "y3y", "K)k45"};
 int count = CountDigitThree (array1);
 string[] array2 = CreateStringLess(array1, count);
