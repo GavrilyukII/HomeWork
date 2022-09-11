@@ -13,6 +13,20 @@ int CountDigitThree (string[] array1)
     return count;
 }
 
+string[] CreateStringLess(string[] array, int count)
+{
+    string[] result = new string[count];
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <=3)
+        {
+            result[result.Length - count] = array[i];
+            count--;
+        }
+    }
+    return result;
+}
+
 string[] array1 = {"hello", "3", "world", ")6GG", "y3y", "K)k45"};
 int count = CountDigitThree (array1);
-
+string[] array2 = CreateStringLess(array1, count);
