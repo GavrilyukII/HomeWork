@@ -40,3 +40,6 @@ void PrintArray(string[] array)
 string[] array1 = {"hello", "3", "world", ")6GG", "y3y", "K)k45"};
 int count = CountDigitThree (array1);
 string[] array2 = CreateStringLess(array1, count);
+PrintArray(array1);
+Console.Write(" -> ");
+PrintArray(array2);
